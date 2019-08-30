@@ -35,14 +35,9 @@ class _LocationDetailsState extends State<LocationDetails> {
             children: <Widget>[
               _topHeaderContainer(LocationDetailsObj.locationDetails,
                   headerContainerHeight, context),
-      ListView(
-        scrollDirection:Axis.vertical,
-        shrinkWrap: true,
-        children: <Widget>[
           _locationCardWidget(LocationDetailsObj.locationDetails, context,
               headerContainerHeight)
-        ],
-      )
+
 
             ],
           ),

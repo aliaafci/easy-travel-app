@@ -21,27 +21,60 @@ class _ImageGridViewState extends State<ImageGridView> {
 
   }
   _gridView(){
-    return
-      new GridView.builder(
-shrinkWrap: true,
-        itemCount: imagesList.length,
-        gridDelegate:
-        new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:crossAxisCount ),
-        itemBuilder: (BuildContext context, int index) {
-          return new GestureDetector(
-            child: new Card(
-                              child: new ClipRRect(
-                  borderRadius: new BorderRadius.circular(5.0),
-                  child:Image.asset(
-                    imagesList[index],
-                    fit: BoxFit.fill,
+    return CustomScrollView(
+      primary: false,
+      shrinkWrap: true,
+      slivers: <Widget>[
+        SliverPadding(
+          padding: const EdgeInsets.all(4.0),
+          sliver: SliverGrid.count(
+//            crossAxisSpacing: 10.0,
+            crossAxisCount: crossAxisCount,
+
+              children:List.generate(imagesList.length, (index) {
+                return new GestureDetector(
+                  child: new Card(
+                      child: new ClipRRect(
+                        borderRadius: new BorderRadius.circular(5.0),
+                        child:Image.asset(
+                          imagesList[index],
+                          fit: BoxFit.fill,
+                        ),
+                      )
                   ),
-                )
-            ),
-            onTap: () {
-            },
-          );
-        });
+                  onTap: () {
+                  },
+                );
+              }),
+          ),
+        ),
+      ],
+    );
   }
+
+//  _gridView(){
+//    return
+//      new GridView.builder(
+//shrinkWrap: true,
+//        scrollDirection: Axis.vertical,
+//        itemCount: imagesList.length,
+//        gridDelegate:
+//        new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount:crossAxisCount ),
+//        itemBuilder: (BuildContext context, int index) {
+//          return new GestureDetector(
+//            child: new Card(
+//                              child: new ClipRRect(
+//                  borderRadius: new BorderRadius.circular(5.0),
+//                  child:Image.asset(
+//                    imagesList[index],
+//                    fit: BoxFit.fill,
+//                  ),
+//                )
+//            ),
+//            onTap: () {
+//            },
+//          );
+//        });
+//  }
 
 }

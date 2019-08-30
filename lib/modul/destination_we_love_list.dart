@@ -1,5 +1,8 @@
 
-
+/**
+ *   below list is a dummy data for list of destination we love  -- 'carousel-loved-destination' widget
+ *
+ */
 List list = [
   {
     "id": "IMAGE1",

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+/**
+ *   below list is a dummy data for transportation types -- 'circule-grid-view'
+ */
 List list = [
   {
     "id": "FLIGHTS",

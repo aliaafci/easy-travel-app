@@ -1,3 +1,7 @@
+
+/**
+ *   below list is a dummy data for location details  -- 'location-details-screen'
+ */
 var locationDetails ={
   "placeImageHint":"assets/place-hint-image.jpg",
   "placeName":"AMERACA",

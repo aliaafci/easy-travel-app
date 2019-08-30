@@ -1,4 +1,6 @@
-
+/**
+ *  below list is a dummy data for carousel star rate screen 'discover new place '
+ */
 List list = [
   {
     "id": "IMAGE1",

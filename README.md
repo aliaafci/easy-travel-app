@@ -4,7 +4,7 @@ Plan, book, pack and go.  If you’re one of the many people who travel during t
 Fork the repository and clone it to your local machine
 Follow the instructions here to install the Flutter SDK
 Setup Android Studio or Visual Studio Code.
-#Building
+# Building
 1-edit in file 'pubseprc.ymal' -- > choose from top package.get
 Android: flutter build apk iOS: flutter build ios
 

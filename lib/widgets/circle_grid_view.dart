@@ -10,7 +10,7 @@ class _CircleGridViewState extends State<CircleGridView> {
   Widget build(BuildContext context) {
     return new GridView.builder(
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 4, mainAxisSpacing: 22.0),
+          crossAxisCount: 4, mainAxisSpacing: 20.0),
       itemCount: circleList.list.length,
       itemBuilder: (BuildContext context, int index) {
         return new GridTile(
@@ -19,11 +19,10 @@ class _CircleGridViewState extends State<CircleGridView> {
               children: <Widget>[
                 new Flexible(
                   child: new SizedBox(
-                    height: 19.0,
+                    height: 30.0,
                     width: 100.0,
                     child: new Text(
                       circleList.list[index]["name"],
-                      maxLines: 4,
                       textAlign: TextAlign.center,
                       overflow: TextOverflow.ellipsis,
                     ),
@@ -37,7 +36,7 @@ class _CircleGridViewState extends State<CircleGridView> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   new SizedBox(
-                    height: 70.0,
+                    height: 60.0,
                     width: 80.0,
                     child: new Row(
                       children: <Widget>[

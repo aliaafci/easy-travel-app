@@ -21,6 +21,19 @@ class _DiscoverNewPlaceState extends State<DiscoverNewPlace> {
                 child: ListView(
                   children: <Widget>[
                     _locationDeatilsTop(context),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        S.of(context).destination_we_love_lbl,
+                        style: TextStyle(
+                          fontSize: 23,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+
+                    ],
+                  ),
                     CarouselStarRateDetails(),
                   ],
                 ),

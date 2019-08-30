@@ -35,7 +35,7 @@ class StarDisplay extends StarDisplayWidget {
           value: value,
           filledStar: const Icon(Icons.star),
           unfilledStar: const Icon(Icons.star_border),
-      filledStarColor: Color.fromARGB(255, 239, 101, 22),
+      filledStarColor: Color.fromARGB(255, 254, 118, 12  ),
       unfilledStarColor:Colors.grey
 
   );

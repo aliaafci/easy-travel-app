@@ -13,7 +13,7 @@ class _CarouselStarRateDetailsState extends State<CarouselStarRateDetails> {
   Widget build(BuildContext context) {
     var containerHeight = MediaQuery.of(context).size.height * 0.77;
     print("first height $containerHeight");
-    var carouselDetailsPadding = containerHeight * 0.55;
+    var carouselDetailsPadding = containerHeight * 0.60;
     return Container(
       width: 300,
       height: containerHeight,

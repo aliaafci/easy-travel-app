@@ -36,12 +36,12 @@ class _DiscoverNewPlaceState extends State<DiscoverNewPlace> {
 
    _discoberPlaceHint(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 6.0),
+      padding: const EdgeInsets.only(bottom: 10.0),
       child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        S.of(context).destination_we_love_lbl,
+                        S.of(context).discover_new_place,
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.w400,

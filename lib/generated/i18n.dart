@@ -25,6 +25,7 @@ class S implements WidgetsLocalizations {
   String get bottom_bar_item_profile => "Profile";
   String get deals_lbl => "Deals";
   String get destination_we_love_lbl => "Destination we love ";
+  String get discover_new_place => "Discover new places";
   String get search_lbl => "Search";
   String get view_all_lbl => "View all";
 }

@@ -21,19 +21,7 @@ class _DiscoverNewPlaceState extends State<DiscoverNewPlace> {
                 child: ListView(
                   children: <Widget>[
                     _locationDeatilsTop(context),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text(
-                        S.of(context).destination_we_love_lbl,
-                        style: TextStyle(
-                          fontSize: 23,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-
-                    ],
-                  ),
+                  _discoberPlaceHint(context),
                     CarouselStarRateDetails(),
                   ],
                 ),
@@ -43,6 +31,25 @@ class _DiscoverNewPlaceState extends State<DiscoverNewPlace> {
           bottomNavigationBar: CustomTabBar(),
         ),
       ],
+    );
+  }
+
+   _discoberPlaceHint(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 6.0),
+      child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        S.of(context).destination_we_love_lbl,
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+
+                    ],
+                  ),
     );
   }
 

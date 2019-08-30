@@ -61,7 +61,7 @@ var paddingLeft = 12.0 ;
       padding: const EdgeInsets.symmetric(vertical: 6.0),
       child: Container(
                       child: CircleGridView(),
-                      height: 110,
+                      height: 100,
                     ),
     );
   }

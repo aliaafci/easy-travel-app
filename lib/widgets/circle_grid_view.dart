@@ -19,7 +19,7 @@ class _CircleGridViewState extends State<CircleGridView> {
               children: <Widget>[
                 new Flexible(
                   child: new SizedBox(
-                    height: 30.0,
+                    height: 20.0,
                     width: 100.0,
                     child: new Text(
                       circleList.list[index]["name"],

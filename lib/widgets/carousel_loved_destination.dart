@@ -7,6 +7,7 @@ class CarouselLovedDestination extends StatefulWidget {
 }
 
 class _CarouselLovedDestinationState extends State<CarouselLovedDestination> {
+  var currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -16,7 +17,7 @@ class _CarouselLovedDestinationState extends State<CarouselLovedDestination> {
         overflow: Overflow.clip,
         children: <Widget>[
           Positioned(
-              left: -63.0,
+              left: currentIndex == 0?  -63.0 :0  ,
               right: 0.0,
               child: Container(
                 height: 200,
@@ -25,6 +26,11 @@ class _CarouselLovedDestinationState extends State<CarouselLovedDestination> {
                   enlargeCenterPage: false,
                   viewportFraction: 0.7,
                   height: 300,
+                  onPageChanged: (index){
+                    setState(() {
+                      currentIndex = index;
+                    });
+                  },
                   initialPage: 0,
                   enableInfiniteScroll: false,
                   items: destinationObject.list.map((lovedDestinationObject) {
@@ -75,4 +81,7 @@ class _CarouselLovedDestinationState extends State<CarouselLovedDestination> {
       ),
     );
   }
+//  _getLift(){
+//    return destinationListLength != currentIndex+1?  -63.0 :4 ;
+//  }
 }

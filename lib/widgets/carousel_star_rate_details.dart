@@ -9,6 +9,8 @@ class CarouselStarRateDetails extends StatefulWidget {
 }
 
 class _CarouselStarRateDetailsState extends State<CarouselStarRateDetails> {
+  var currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     var containerHeight = MediaQuery.of(context).size.height * 0.77;
@@ -21,7 +23,7 @@ class _CarouselStarRateDetailsState extends State<CarouselStarRateDetails> {
         overflow: Overflow.clip,
         children: <Widget>[
           Positioned(
-              left: -20.0,
+              left: currentIndex == 0 ?-20:0,
               right: 0.0,
               child: Container(
                 height: containerHeight,
@@ -32,6 +34,11 @@ class _CarouselStarRateDetailsState extends State<CarouselStarRateDetails> {
                   height: containerHeight,
                   initialPage: 0,
                   enableInfiniteScroll: false,
+                  onPageChanged: (index){
+                    setState(() {
+                      currentIndex = index;
+                    });
+                  },
                   items: carouselDetailsList.list.map((detailObject) {
                     return Builder(
                       builder: (BuildContext context) {

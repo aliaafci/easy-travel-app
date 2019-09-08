@@ -3,7 +3,7 @@ Plan, book, pack and go. If you’re one of the many people who travel during th
   
 ## Screenshots
 
-<img height=550 width=275 src="https://github.com/aliaafci/easy-travel-app/blob/master/Screenshots/easy-travel1.jpg" hspace=24><img height=550 width=275 src="https://github.com/aliaafci/easy-travel-app/blob/master/Screenshots/easy-travel2.jpg" hspace=24/><img height=550 width=275 src="https://github.com/aliaafci/easy-travel-app/blob/master/Screenshots/easy-travel3.jpg"/> 
+<img height=550 width=275 src="https://github.com/aliaafci/easy-travel-app/blob/master/Screenshots/easy-travel1.jpg" ><img height=550 width=275 src="https://github.com/aliaafci/easy-travel-app/blob/master/Screenshots/easy-travel2.jpg" hspace=24/><img height=550 width=275 src="https://github.com/aliaafci/easy-travel-app/blob/master/Screenshots/easy-travel3.jpg"/> 
 
 
 
